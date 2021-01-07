@@ -5,11 +5,12 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-// any CSS you import will output into a single css file (app.css in this case)
+// any CSS you import will output into a single css file (app.scss in this case)
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import '../styles/app.css';
+import '../styles/app.scss';
 import Home from './components/Home';
+import HttpsRedirect from 'react-https-redirect';
 
-ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));
+ReactDOM.render((<HttpsRedirect><Router><Home /></Router></HttpsRedirect>), document.getElementById('root'));

@@ -1,10 +1,11 @@
 
 import React, {Component} from 'react';
 import axios from 'axios';
+import HEADER from "./HEADER";
 
 class Users extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = { users: [], loading: true};
     }
 
@@ -22,15 +23,15 @@ class Users extends Component {
         const loading = this.state.loading;
         return(
             <div>
+                <HEADER title={'Users - Julien MOULIN'}/>
                 <section className="row-section">
                     <div className="container">
                         <div className="row">
-                            <h2 className="text-center"><span>List of users</span>Created with <i
-                                className="fa fa-heart"></i> by yemiwebby</h2>
+                            <h2 className="text-center"><span>List of users</span>Created with <i className="fa fa-heart"/> by yemiwebby</h2>
                         </div>
                         {loading ? (
                             <div className={'row text-center'}>
-                                <span className="fa fa-spin fa-spinner fa-4x"></span>
+                                <span className="fa fa-spin fa-spinner fa-4x"/>
                             </div>
                         ) : (
                             <div className={'row'}>

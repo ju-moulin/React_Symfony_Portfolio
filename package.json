@@ -1,14 +1,19 @@
 {
     "devDependencies": {
         "@babel/preset-react": "^7.12.10",
+        "@date-io/moment": "^2.10.6",
+        "@material-ui/pickers": "^3.2.10",
         "@symfony/stimulus-bridge": "^1.1.0",
         "@symfony/webpack-encore": "^0.32.0",
         "axios": "^0.21.1",
         "core-js": "^3.0.0",
+        "node-sass": "^4.0.0",
         "prop-types": "^15.7.2",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
+        "react-moment": "^1.1.1",
         "regenerator-runtime": "^0.13.2",
+        "sass-loader": "^9.0.1",
         "stimulus": "^2.0.0",
         "webpack-notifier": "^1.6.0"
     },
@@ -23,6 +28,16 @@
     "dependencies": {
         "@babel/plugin-proposal-class-properties": "^7.12.1",
         "@babel/plugin-transform-runtime": "^7.12.10",
+        "@material-ui/core": "^4.11.2",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/lab": "^4.0.0-alpha.57",
+        "bootstrap": "^4.5.3",
+        "moment": "^2.29.1",
+        "react-bootstrap": "^1.4.0",
+        "react-datetime": "^3.0.4",
+        "react-datetime-inputs": "^0.0.6",
+        "react-helmet": "^6.1.0",
+        "react-https-redirect": "^1.1.0",
         "react-router-dom": "^5.2.0"
     }
 }
